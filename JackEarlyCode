@@ -1,0 +1,59 @@
+
+#include <stdio.h>      /* printf, scanf, puts, NULL */
+#include <stdlib.h>     /* srand, rand */
+#include <time.h>       /* time */
+
+void setup() {
+  // put your setup code here, to run once:
+  int data[10];
+  int state = 1;
+
+}
+
+//void loop()
+int main() 
+{
+  // put your main code here, to run repeatedly:
+    int a = 1;
+    
+ for( a = 1; a < 2; a = a + 1 )
+ {
+    int state = rand() % 3; 
+    //printf("%d\n", state);
+    if(state == 0)
+    {
+    printf("In Reset \n"); 
+    
+    }
+    if(state == 1)
+    {
+    printf("In Import \n"); 
+    
+    }
+    if(state == 2)
+    {
+    printf("In Export \n");
+    }
+ }
+ 
+ for( a = 1; a < 2; a = a + 1 )
+ {
+    int state = rand() % 3; 
+    //printf("%d\n", state);
+    if(state == 0)
+    {
+    printf("Set Reset \n"); 
+    
+    }
+    if(state == 1)
+    {
+    printf("Set Import \n"); 
+    
+    }
+    if(state == 2)
+    {
+    printf("Set Export \n");
+    }
+ }
+}
+
